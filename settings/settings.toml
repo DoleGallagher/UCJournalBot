@@ -1,0 +1,67 @@
+#### JOB SETTINGS
+#---------------#
+
+# REED API key for accessing job data
+# can be obtained by signing up at https://www.reed.co.uk/developers/jobseeker
+# the current key may not continue to work so I advise getting your own
+api_key = "9751d3ed-b2c4-4cb5-b8b6-d3737e65e295"
+
+# List of keywords to include in the job search
+# initial 3 are just an example, you can add/remove from the list
+# double quote each keyword and separate with commas
+job_keywords = [
+    "warehouse",
+    "picker",
+    "office",
+]
+
+# The date range you "applied" for jobs
+# Format: DD/MM/YYY e.g - 01/02/2023 until 14/02/2023
+[dates]
+start_date = "01/01/2023"
+end_date = "14/01/2023"
+
+# The city you want to "search for jobs" in and the distance you're "willing to travel"
+[location]
+city = "London"
+mile_radius = 15
+
+# The number of jobs you "applied for" each day
+[jobs]
+jobs_per_day = 2
+
+##### UC SETTINGS
+#---------------#
+
+# These cookies are required to make valid requests to the UC server
+# They expire regularly so you will need to be updated every time you use the script
+# You must be logged in on broswer for these to be valid
+[cookies]
+sessionId = "6af452ad-2a1e-45d7-9a44-0fff100d214b"
+uctx = "7c5ae96d-6873-466b-8228-1d2d4a36b04d"
+
+# Instructions to find the above cookie values
+
+# Chrome:
+#
+# Open Chrome and press F12 to open the developer tools
+# or right-click anywhere on the page and select "Inspect"
+# Click on the "Application" tab in the developer tools.
+# Under the "Storage" section, click on "Cookies" to view and manage cookies for the current website.
+#
+
+# Firefox:
+#
+# Open Firefox and press F12 to open the developer tools
+# or right-click anywhere on the page and select "Inspect Element"
+# Click on the "Storage" tab in the developer tools.
+# Under the "Cookies" section, you can view and manage cookies for the current website.
+#
+
+# Safari:
+#
+# Open Safari and press Option+Command+C to open the developer tools
+# or right-click anywhere on the page and select "Inspect Element"
+# Click on the "Storage" tab in the developer tools.
+# Under the "Cookies" section, you can view and manage cookies for the current website.
+#
