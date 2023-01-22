@@ -3,7 +3,7 @@ import sys
 from lxml import html
 from requests import Session
 
-JOB_BASE_URL = 'https://www.universal-credit.service.gov.uk'
+UC_BASE_URL = 'https://www.universal-credit.service.gov.uk'
 
 
 class UC:
@@ -20,14 +20,14 @@ class UC:
         return hidden_input.get('value')
 
     def last_entry_url(self):
-        r = self.session.get('https://www.universal-credit.service.gov.uk/work-search')
+        r = self.session.get(UC_BASE_URL + '/work-search')
         session_token = self.session.cookies.get('sessionId', domain='www.universal-credit.service.gov.uk')
         if session_token == 'expired':
             print('Invalid session cookies')
             sys.exit()
         doc = html.fromstring(r.content)
         link = doc.xpath('//a[@class="job-list__item-link"]')[0]
-        return JOB_BASE_URL + link.attrib['href']
+        return UC_BASE_URL + link.attrib['href']
 
     def load_session(self):
         session = Session()
@@ -47,4 +47,4 @@ class UC:
                 "notes":  job[2],
                 "submit": "Save"
             }
-            self.session.post('https://www.universal-credit.service.gov.uk:443/work-search/job', data=data)
+            self.session.post(UC_BASE_URL + ':443/work-search/job', data=data)

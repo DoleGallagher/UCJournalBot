@@ -45,7 +45,7 @@ A start and end date should be supplied, probably a 2-week period between your a
 A city is required and a mile radius for which you are "prepared to travel" to "work". This is to get local search results just like you would using the website search.
 
 ### Jobs per day
-This setting determines how many jobs you will "apply for" each day, initially set to 3. You can turn this up if you have a particularly depressed work coach who hates the fact that you don't need to get up in the morning and who's only joy in life is demanding more from you despite your government handout not affecting their lives at all.
+This setting determines how many jobs you will "apply for" each day, initially set to 2. You can turn this up if you have a particularly depressed work coach who hates the fact that you don't need to get up in the morning and who's only joy in life is demanding more from you despite your government handout not affecting their lives at all.
 
 ### Cookies - IMPORTANT
 In order to send valid requests to the government website, a couple of cookies need to be present. 'sessionId' and 'uctx' tokens are issued when you log in, and they expire regularly so will need to be updated every time you use the bot.
