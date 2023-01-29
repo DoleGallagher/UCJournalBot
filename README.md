@@ -26,7 +26,7 @@ pip install requests lxml tomli
 Clone the repository from GitHub by running the following command
 
 ```
-git clone git@github.com:DoleGallagher/UCJournalBot.git
+git clone https://github.com/DoleGallagher/UCJournalBot.git
 ```
 
 # Setup
